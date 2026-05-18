@@ -1,8 +1,8 @@
-FROM alpine:3.22.0
+FROM alpine:3.23.4
 
 RUN apk update && \
     apk upgrade && \
-    apk --no-cache add curl==8.14.1-r1 jq==1.8.0-r0 bash==5.2.37-r0 && \
+    apk --no-cache add curl==8.19.0-r0 jq==1.8.1-r0 bash==5.3.3-r1 && \
     rm -rf /var/cache/apk/*
 
 COPY src /
